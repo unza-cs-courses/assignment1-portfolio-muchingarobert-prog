@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Robert Muchinga">
+    <title>Portfolio - Robert Muchinga</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -33,13 +33,16 @@
                  - Active state indication
             -->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Robert Muchinga</a>
             </div>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+    ☰
+            </button>
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -55,10 +58,12 @@
                  - Consider using Flexbox for layout
             -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Robert Muchinga</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+        
+        
+                  Software Engineeering student at the University of Zambia, passionate about web development. I am proficient in developing responsive, accessible, and user-friendly web applications.
+            
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -79,7 +84,7 @@
                 <div class="about__content">
                     <div class="about__image">
                         <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile-placeholder.jpg" alt="Profile photo of Robert Muchinga">
                     </div>
                     <div class="about__text">
                         <p>
@@ -90,9 +95,11 @@
                                  - Your goals
                                  - What makes you unique
                             -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            Am a 4th year computer science student majoring in Software Engineering at the University of Zambia
+                              at the department of Computer Science and Informatics. 
+                            Am interest in web development dates back before my 4th year when I started watching web development YouTube videos.
+                             When i was introduced to web programming in my 4th year, I was very excited because now knew that I'd be able to make more responsive and accessible web applications like I do now. 
+                            My goal is to become a full stack web developer and work on projects that make a positive impact on people's lives. I am passionate about learning new technologies and continuously improving my skills. What makes me unique is my dedication to creating user-friendly and visually appealing web applications, as well as my ability to collaborate effectively with teams to bring ideas to life.
                         </p>
                         <h3>Skills</h3>
                         <ul class="skills-list">
@@ -101,6 +108,11 @@
                             <li>CSS3</li>
                             <li>JavaScript</li>
                             <li>Responsive Design</li>
+                            <li>Git & GitHub</li>
+                            <li>Graphic Design</li>
+                            <li>Information Technology</li>
+                            <li>Problem Solving</li>
+                            <li>Great Team player</li>
                             <!-- Add more skills -->
                         </ul>
                     </div>
@@ -120,15 +132,16 @@
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects__grid">
-                    <!-- Project Card 1 -->
+                    
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
                         <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Church Management System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A web application designed to help churches manage their operations more efficiently. 
+                                It includes features such as member management, event scheduling, and donation tracking. 
+                                Built using HTML, CSS, JavaScript, and a backend framework (e.g., Node.js).
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -140,12 +153,12 @@
                     <!-- Project Card 2 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/project2-placeholder.jpg" alt="Screenshot of personal portfolio website">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Personal Portfolio Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive portfolio website built with HTML, CSS, and JavaScript. 
+                                It showcases projects, skills, and contact information in a modern design.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -157,14 +170,17 @@
                     <!-- Project Card 3 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Student Result Processing System">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Student Result Processing System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A web application designed to process and display student academic results. 
+                                It allows teachers to input grades, view results, and generate reports. 
+                                Built using HTML, CSS, JavaScript, and a backend framework (e.g., Node.js).
                             </p>
                             <div class="project-card__links">
+                                <a href="https://your-live-demo-link.com" target="_blank" class="btn btn--small">Live Demo</a>
+                                <a href="https://github.com/yourusername/student-result-system" target="_blank" class="btn btn--small btn--outline">GitHub</a>
                                 <a href="#" class="btn btn--small">Live Demo</a>
                                 <a href="#" class="btn btn--small btn--outline">GitHub</a>
                             </div>
@@ -199,7 +215,7 @@
                             id="name"
                             name="name"
                             required
-                            placeholder="Your Name"
+                            placeholder="Enter your name"
                             minlength="2"
                         >
                     </div>
@@ -210,7 +226,7 @@
                             id="email"
                             name="email"
                             required
-                            placeholder="your.email@example.com"
+                            placeholder="Enter your email address"
                         >
                     </div>
                     <div class="form-group">
@@ -228,6 +244,7 @@
                             id="message"
                             name="message"
                             required
+                            aria-required="true"
                             rows="5"
                             placeholder="Your message..."
                             minlength="10"
@@ -248,7 +265,7 @@
              - Back to top link (optional)
         -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 ROBERT MUCHINGA. All rights reserved.</p>
             <nav class="footer__social">
                 <!-- TODO: Add your social media links -->
                 <a href="#" aria-label="GitHub">GitHub</a>
