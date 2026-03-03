@@ -21,8 +21,7 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
    ============================================================ */
 :root {
     /* Colors - TODO: Customize your color palette */
-    --color-primary: #2c3e50;
-    --color-primary-dark: #1a2530;
+    --color-primary: #afb8ec;
     --color-secondary: #3498db;
     --color-text: #2c3e50;
     --color-text-light: #7f8c8d;
@@ -31,28 +30,28 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
     --color-border: #bdc3c7;
 
     /* Typography - TODO: Define your font sizes */
-    --font-family: /* Your font stack */;
-    --font-size-base: /* Base size, e.g., 16px */;
-    --font-size-sm: /* Small text */;
-    --font-size-lg: /* Large text */;
-    --font-size-xl: /* Extra large */;
-    --font-size-2xl: /* Headings */;
-    --font-size-3xl: /* Large headings */;
+    --font-family: ;
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 28px;
 
     /* Spacing - TODO: Define spacing scale */
-    --spacing-xs: /* Extra small */;
-    --spacing-sm: /* Small */;
-    --spacing-md: /* Medium */;
-    --spacing-lg: /* Large */;
-    --spacing-xl: /* Extra large */;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
 
     /* Layout */
-    --max-width: /* Container max-width */;
-    --border-radius: /* Default border radius */;
+    --max-width: 1200px;
+    --border-radius: 4px;
 
     /* Transitions */
-    --transition-fast: /* Fast transition */;
-    --transition-normal: /* Normal transition */;
+    --transition-fast: 0.2s;
+    --transition-normal: 0.4s;
 }
 
 /* ============================================================
@@ -62,31 +61,42 @@ DO NOT use CSS frameworks (Bootstrap, Tailwind, etc.)
 *,
 *::before,
 *::after {
-    /* TODO: box-sizing, margin, padding reset */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-    /* TODO: scroll-behavior, font-size */
+    scroll-behavior: smooth;
+    font-size: var(--font-size-base);
 }
 
 body {
-    /* TODO: font-family, color, background-color, line-height */
+    font-family: var(--font-family);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
 }
 
 img {
-    /* TODO: Make images responsive */
+    max-width: 100%;
+    height: auto;
 }
 
 a {
-    /* TODO: Link styles */
+    /* Link styles */
+    color: var(--color-primary);
+    text-decoration: underline;
 }
 
 a:hover {
-    /* TODO: Link hover state */
+    /* Link hover state */
+    text-decoration: none;
 }
 
 ul {
-    /* TODO: List reset */
+    /* List reset */
+    list-style: none;
 }
 
 /* ============================================================
@@ -117,7 +127,10 @@ ul {
 }
 
 .btn--primary {
-    /* TODO: Primary button (filled) */
+    /* Primary button (filled) */
+    background-color: var(--color-primary);
+    color: var(--color-background-alt);
+    border: none;
 }
 
 .btn--primary:hover {
